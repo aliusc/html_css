@@ -13,6 +13,14 @@
     }
 }
 
+@mixin input-border-round ($state: normal) {
+    border: 1px solid $color__input-border;
+    border-radius: 50%;
+    @if $state == 'disabled' {
+        border-color: lighten($color__text-muted, 30%);
+    }
+}
+
 @mixin button-base {
     display: inline-block;
     padding: $padding__button;

@@ -2,7 +2,9 @@
 $color__link:         $color__royal-blue;
 $color__input-border: $color__shuttle-grey;
 $color__check:        $color__white;
+$color__radio:        $color__white;
 $background__check:   $color__shuttle-grey;
+$background__radio:   $color__shuttle-grey;
 $background__button:  $color__shuttle-grey;
 
 // Line heights
@@ -18,6 +20,8 @@ $margin__form-label: .25rem;
 // Sizes
 $size__inputs-buttons: 3rem;
 $size__checkbox:       1.4rem;
+$size__radio:          1.4rem;
 
 // Icons
 $icon__check: " \f00c" !default;
+$icon__radio: " \f111" !default;

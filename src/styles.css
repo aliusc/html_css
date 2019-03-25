@@ -1774,6 +1774,99 @@ p {
   background-color: #2e3033;
 }
 
+.control--radio {
+  margin-bottom: 0;
+  padding-left: .8rem;
+}
+
+.control--radio .label {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  padding-left: .5rem;
+  line-height: 1.4rem;
+}
+
+.control--radio .label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  left: 0;
+  margin-left: -2rem;
+  border: 1px solid #5f6368;
+  border-radius: 50%;
+}
+
+.disabled .control--radio .label::before {
+  border: 1px solid #5f6368;
+  border-radius: 50%;
+  border-color: #c3c3c3;
+}
+
+.control--radio .label::after {
+  display: inline-block;
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  left: 0;
+  top: 0;
+  margin-left: -2rem;
+  padding-left: 4px;
+  font-size: 0.5rem;
+  line-height: 1.3rem;
+  color: white;
+  border: 1px solid #5f6368;
+  border-radius: 50%;
+}
+
+.disabled .control--radio .label::after {
+  border: 1px solid #5f6368;
+  border-radius: 50%;
+  border-color: #c3c3c3;
+}
+
+.control--radio .radio {
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.control--radio .radio:checked + .label::after {
+  content: " ";
+  font-family: "Font Awesome 5 Free";
+  background-color: #5f6368;
+}
+
+.control--radio .radio:disabled {
+  cursor: not-allowed;
+}
+
+.control--radio .radio:disabled + .label {
+  color: #767676;
+}
+
+.control--radio .radio:disabled + .label::before {
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.control--radio .radio:disabled + .label::after {
+  color: #767676;
+  background-color: #e6e6e6;
+  cursor: not-allowed;
+}
+
+.control--radio .radio:focus + .label::before {
+  box-shadow: 0 0 0 2px rgba(95, 99, 104, 0.4);
+}
+
+.control--radio .radio:checked:focus + .label::after {
+  background-color: #2e3033;
+}
+
 .button {
   display: inline-block;
   padding: 0.2rem 1rem;
