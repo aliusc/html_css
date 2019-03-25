@@ -33,9 +33,10 @@
       left: 0;
       top: 0;
       margin-left: -2rem;
-      padding-left: 3px;
+      padding-left: 0px;
       font-size: 0.5rem;
       line-height: $line-height__input-normal - .1rem; // fine tune
+      text-align: center;
       color: $color__radio;
       @include input-border-round();
     }

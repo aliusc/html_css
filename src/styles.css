@@ -1814,9 +1814,10 @@ p {
   left: 0;
   top: 0;
   margin-left: -2rem;
-  padding-left: 3px;
+  padding-left: 0px;
   font-size: 0.5rem;
   line-height: 1.3rem;
+  text-align: center;
   color: white;
   border: 1px solid #5f6368;
   border-radius: 50%;
